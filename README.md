@@ -3,7 +3,7 @@ RunAwayfromBall
 https://unityroom.com/games/rab
 
 ## 概要
-鬼ごっこのゲーム。鬼がランダムに出現するのでその鬼から逃げるゲーム。
+鬼ごっこのゲーム。ランダムに出現する鬼から逃げる時間を競うゲーム。
 
 ## Demo
 タイトル画面
