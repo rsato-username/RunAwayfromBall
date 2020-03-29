@@ -9,7 +9,7 @@ https://unityroom.com/games/rab
 
 下記リンクで簡単に動画で紹介しています
 <br>
-https://www.youtube.com/watch?v=ZOfEjpie1kg
+https://youtu.be/TxmbF_a3hz8
 <br><br>
 タイトル画面
 <img width="959" alt="1" src="https://user-images.githubusercontent.com/56751063/77815610-cdcda800-70ff-11ea-9c77-ff4678110ad8.png">
