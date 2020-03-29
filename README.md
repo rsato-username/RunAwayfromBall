@@ -14,3 +14,6 @@ https://unityroom.com/games/rab
 <img width="958" alt="3" src="https://user-images.githubusercontent.com/56751063/77815614-d0300200-70ff-11ea-9eff-3fbf048613e0.png">
 <img width="957" alt="4" src="https://user-images.githubusercontent.com/56751063/77815615-d1612f00-70ff-11ea-995f-4f2039500ad6.png">
 <img width="958" alt="5" src="https://user-images.githubusercontent.com/56751063/77815616-d2925c00-70ff-11ea-9eb5-7a5a1223a71e.png">
+<br>
+下記リンクで簡単に動画で紹介しています
+https://www.youtube.com/watch?v=ZOfEjpie1kg
