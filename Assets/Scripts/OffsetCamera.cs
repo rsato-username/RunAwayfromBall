@@ -13,7 +13,7 @@ public class OffsetCamera : MonoBehaviour
 	}
 
 	void Update()
-    {
+	{
 		transform.position = Escaper.transform.position + offset;
-    }
+	}
 }

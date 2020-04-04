@@ -7,16 +7,15 @@ public class OniContoroller : MonoBehaviour
 {
 	public NavMeshAgent Oni;
 	public GameObject Escaper;
-    void Start()
-    {
-        Oni = gameObject.GetComponent<NavMeshAgent>();
-    }
 
-    void Update()
-    {
-        if (Escaper != null)
-		{
+	void Start()
+	{
+		Oni = gameObject.GetComponent<NavMeshAgent>();
+	}
+
+	void Update()
+	{
+		if (Escaper != null)
 			Oni.destination = Escaper.transform.position;
-		}
-    }
+	}
 }

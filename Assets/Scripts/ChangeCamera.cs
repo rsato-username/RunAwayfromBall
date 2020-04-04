@@ -10,8 +10,10 @@ public class ChangeCamera : MonoBehaviour
 
 	void Update()
 	{
+		// Escaper消滅で切り替え停止
 		if (Escaper != null)
 		{
+			// Bでカメラ切り替え
 			if (Input.GetKeyDown(KeyCode.B))
 			{
 				mainCamera.SetActive(!mainCamera.activeSelf);
@@ -24,6 +26,7 @@ public class ChangeCamera : MonoBehaviour
 	{
 		if (Escaper != null)
 		{
+			// ボタンでカメラ切り替え
 			mainCamera.SetActive(!mainCamera.activeSelf);
 			backCamera.SetActive(!backCamera.activeSelf);
 		}

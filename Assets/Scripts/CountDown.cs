@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class CountDown : MonoBehaviour
 {
-	[SerializeField] private float seconds;
-	[SerializeField] public GameObject Oni;
-	[SerializeField] public GameObject OniGenerator;
+	private float seconds;
+	public GameObject Oni;
+	public GameObject OniGenerator;
 	private float oldSeconds;
 	private Text CountDownText;
 
-    void Start()
-    {
+	void Start()
+	{
 		seconds = 10.0f;
 		oldSeconds = 10.0f;
 		CountDownText = GetComponentInChildren<Text> ();
@@ -20,11 +20,12 @@ public class CountDown : MonoBehaviour
 		this.OniGenerator = GameObject.Find("OniGenerator");
 		Oni.SetActive(false);
 		OniGenerator.SetActive(false);
-    }
+	}
 
-    void Update()
-    {
-        if (seconds <= 10.0f)
+	void Update()
+	{
+		// カウントダウン
+		if (seconds <= 10.0f)
 		{
 			seconds -= Time.deltaTime;
 			if((int)seconds != (int)oldSeconds)
@@ -33,6 +34,7 @@ public class CountDown : MonoBehaviour
 			}
 			oldSeconds = seconds;
 		}
+		// 鬼活動開始
 		if (seconds < 0)
 		{
 			Oni.SetActive(true);

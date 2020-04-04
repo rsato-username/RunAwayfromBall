@@ -5,21 +5,24 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private int minute;
-	[SerializeField] private float seconds;
-	[SerializeField] private float countdown;
-	[SerializeField] public GameObject Escaper;
+	private int minute;
+	private float seconds;
+	private float countdown;
+	public GameObject Escaper;
 	private float oldSeconds; // 前のUpdateの時の秒数
 	public Text timerText; // タイマー表示用テキスト
  
-	void Start () {
+	void Start ()
+	{
 		minute = 0;
 		seconds = 0;
 		oldSeconds = 0;
 		timerText = GetComponentInChildren<Text>();
 	}
  
-	void Update () {
+	void Update ()
+	{
+		// カウントダウンの10秒
 		if (countdown < 10)
 			countdown += Time.deltaTime;
 		if (countdown >= 10)

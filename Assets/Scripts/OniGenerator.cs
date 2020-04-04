@@ -5,16 +5,17 @@ using UnityEngine;
 public class OniGenerator : MonoBehaviour
 {
 	public GameObject Escaper;
-    public GameObject OniPrefab;
+	public GameObject OniPrefab;
 	float span = 10.0f;
 	float delta = 0;
 	float flag = 0;
 
-    void Update()
-    {
+	void Update()
+	{
 		if (Escaper != null)
-        {
+		{
 			this.delta += Time.deltaTime;
+			// 時間経過で鬼生成頻度上昇
 			if (this.flag >= 6)
 				this.span = 5;
 			if (this.flag >= 12)
@@ -31,5 +32,5 @@ public class OniGenerator : MonoBehaviour
 				Oni.transform.position = new Vector3(x, 0.5f, z);
 			}
 		}
-    }
+	}
 }

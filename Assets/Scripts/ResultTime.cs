@@ -7,15 +7,15 @@ public class ResultTime : MonoBehaviour
 {
 	public Timer timer;
 	private Text result;
-	bool once = true;
+	private bool once = true;
 
-    void Update()
-    {
+	void Update()
+	{
 		if (once)
 		{
 			result = GetComponentInChildren<Text>();
 			result.text = timer.timerText.text;
 			once = false;
 		}
-    }
+	}
 }
